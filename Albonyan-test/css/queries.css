@@ -1,0 +1,398 @@
+/* *********************** */
+/* Below 1200px (Smaller desktops) */
+/* *********************** */
+
+@media (max-width: 75em) {
+  :root {
+    /* 9px */
+    font-size: 56.25%;
+  }
+
+  .hero {
+    padding-left: 6.4rem;
+  }
+
+  .hero-img-box img {
+    width: 90%;
+  }
+
+  .layout-padding {
+    padding: 0 6.4rem;
+  }
+
+  .primary-heading {
+    font-size: 5.2rem;
+  }
+
+  .marketing {
+    padding: 0;
+    margin: 0 6.4rem;
+  }
+
+  .marketing-features-box {
+    display: block;
+  }
+
+  .marketing-feature-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 2rem;
+  }
+
+  .marketing-text-box {
+    padding-left: 1.6rem;
+  }
+
+  .secondery-heading {
+    font-size: 3.6rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.2rem !important;
+  }
+
+  .discover-text {
+    font-size: 1.6rem;
+  }
+
+  .testemonial {
+    padding: 8rem 11.8rem 8rem 6.4rem;
+    margin: 0 6.4rem;
+  }
+
+  .testemonial-img img {
+    width: 65%;
+  }
+}
+
+/* *********************** */
+/* Below 928px (Tablets) */
+/* *********************** */
+
+@media (max-width: 58em) {
+  :root {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .header {
+    grid-template-columns: 1.5fr 8fr 2fr;
+  }
+
+  .header .btn:link,
+  .header .btn:visited {
+    padding: 1.6rem 1.6rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    position: absolute;
+    right: 10%;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1.1fr 1.2fr;
+  }
+
+  .hero-feedback {
+    margin-bottom: 3.6rem;
+  }
+
+  .feature {
+    padding: 3.2rem 1.6rem 3.2rem 3.2rem;
+  }
+
+  .discover-container {
+    padding: 6.4rem;
+  }
+
+  .testemonial {
+    padding: 8rem 6.4rem 8rem 6.4rem;
+  }
+
+  .footer-content {
+    gap: 6.4rem !important;
+  }
+}
+
+/* *********************** */
+/* Below 720px (Smaller tablets) */
+/* *********************** */
+
+@media (max-width: 45em) {
+  :root {
+    /* 9px */
+    font-size: 56.25%;
+  }
+
+  .layout-padding {
+    padding: 0 4.8rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .how-features-box {
+    flex-direction: column;
+  }
+
+  .how-feature {
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .marketing-section .grid--2-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .marketing {
+    margin: 0 4.8rem;
+  }
+
+  .discover-us-section .grid--2-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .discover-img-box {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pricing-section .grid--3-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .demostration {
+    grid-template-columns: 1fr;
+  }
+
+  .demostration-description {
+    padding-left: 0;
+  }
+
+  .download {
+    padding: 12.8rem 4.8rem;
+  }
+
+  .testemonial {
+    grid-template-columns: 1fr;
+    padding: 8rem 4.8rem 8rem 4.8rem;
+  }
+
+  .testemonial-job {
+    display: block;
+    text-align: center;
+  }
+
+  .testemonial-job .slides-btns {
+    display: none;
+  }
+
+  .testemonial-img {
+    justify-content: center !important;
+  }
+  .testemonial-img img {
+    width: 30%;
+  }
+
+  .icons-container {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .review {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .parteners--flex {
+    display: grid;
+    gap: 2.8rem 0.8rem;
+  }
+
+  .parteners--grid,
+  .parteners--flex {
+    max-width: 50rem;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  .suponser-logo.frist {
+    margin-left: auto;
+  }
+
+  .suponser-logo.center {
+    margin: 0 auto;
+  }
+
+  .empty-item {
+    display: block;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .logo-col,
+  .address-col,
+  .nav-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-col {
+    margin: 0 auto;
+    margin-left: auto;
+    width: 40rem !important;
+  }
+
+  address.contacts {
+    align-items: center;
+  }
+
+  .footer-heading {
+    margin-right: 1.6rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4.2rem;
+  }
+}
+
+/* *********************** */
+/* Below 568px (Smaller tablets) */
+/* *********************** */
+
+@media (max-width: 35.5em) {
+  .icon-mobile-nav {
+    height: 3.8rem;
+    width: 3.8rem;
+    color: #333;
+  }
+
+  .btn-mobile-nav {
+    right: 7%;
+  }
+
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-left: 4.8rem;
+  }
+
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+
+  .hero-img-box img {
+    width: 50%;
+  }
+  .features-section header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all-features-link {
+    margin-bottom: 4.8rem;
+  }
+
+  .features.grid--3-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature-icon {
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+
+  .discover-container {
+    padding: 3.2rem;
+  }
+
+  .download {
+    padding: 12.8rem 3.2rem;
+  }
+
+  .parteners--grid,
+  .parteners--flex {
+    /* padding-right: 4.6rem; */
+  }
+
+  .testemonial {
+    padding: 6.4rem 3.2rem 6.4rem 3.2rem;
+    margin: 0 4.8rem;
+  }
+
+  .testemonial-img img {
+    width: 40%;
+  }
+
+  footer .layout-padding {
+    padding: 0 0.8rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .download-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+}

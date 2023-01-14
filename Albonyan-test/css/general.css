@@ -1,0 +1,180 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 700
+
+- Line heights
+Default: 1
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+#182D60
+#ECF1F2
+#BF5857
+#3D9DE1
+#8C9EBE
+#DDAF55
+#D29A9B
+#ECC5A4
+#BCC6D1
+
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#555
+#333
+
+--- 05 SHADOWS
+
+  box-shadow: 4px 8px 35px 16px #00000017;
+
+--- 06 BORDER-RADIUS
+
+Default: 0.4px
+Medium: 0.8px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #0e1133;
+  overflow-x: hidden;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 130rem;
+  /* padding: 0 9.6rem; */
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.layout-padding {
+  padding: 0 9.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  justify-self: flex-end;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2.4rem;
+  transition: all 0.5s;
+}
+
+.primary-heading {
+  font-size: 6.2rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.secondery-heading {
+  font-size: 4.4rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  font-weight: 700;
+}
+
+.tertiary-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.sub-heading {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #2c1b37;
+  margin-bottom: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slides-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+}
+
+.slide-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #767676;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.radius--4px {
+  border-radius: 0.4rem;
+}
+
+.radius--8px {
+  border-radius: 0.8rem;
+}
+
+.radius--24px {
+  border-radius: 2.4rem;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}
