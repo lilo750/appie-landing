@@ -38,11 +38,12 @@
     defer
     src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
   ></script>
-  <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
       <img src="imgs/logo.png" class="logo" alt="appie logo" />
+
+      <input type="checkbox" id="checkbox-id">
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
@@ -63,10 +64,11 @@
       </nav>
       <a class="btn nav-btn" href="#">get started</a>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+      <label for="checkbox-id">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </label>
+
     </header>
     <main>
       <section class="hero-section">
@@ -651,8 +653,7 @@
       </section>
     </main>
     <footer>
-      <div class="container layout-padding">
-        <div class="footer-content">
+        <div class="footer-content container layout-padding">
           <div class="logo-col">
             <img src="imgs/logo.png" class="logo" alt="appie logo" />
             <p class="footer-description">
@@ -740,8 +741,7 @@
           <p class="copyright">
             Copyright &copy; 2023 Appie. All rights reserved
           </p>
-        </div>
-      </div>
+    </div>
     </footer>
   </body>
 </html>
